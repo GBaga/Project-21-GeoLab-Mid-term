@@ -1,3 +1,527 @@
 @import "./_reset";
 @import "./_variables";
+@import "./_utilities";
+
+@import "./_fonts";
 @import "./_header-footer";
+
+body {
+  font-family: "Poppins", serif;
+}
+
+main {
+  background-color: rgb(138, 255, 127);
+
+  .finances-section {
+    @include contWidth(1280px, 100%, 190px 0 52px 0px, 0 auto);
+    @include dFlex(space-between, center);
+    background-color: aquamarine;
+
+    position: relative;
+
+    .statistics-container {
+      height: 200px;
+      @include contWidth(1280px, 100%, 51px 109px 47px 110px, 0 auto);
+      @include dFlex(space-between, center);
+      border-radius: 16px;
+      border: none;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 1);
+      position: absolute;
+      top: -100px;
+      background-color: #fff;
+
+      h3 {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 72px;
+        letter-spacing: 0;
+
+        span {
+          color: #bc8afc;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0;
+      }
+    }
+
+    .img-profile-man {
+      max-width: 565px;
+      height: 732px;
+    }
+
+    .text-box {
+      max-width: 611px;
+      width: 100%;
+      min-height: 419px;
+      margin: auto 0;
+      @include dFlex(space-between, start);
+      flex-direction: column;
+      gap: 16px;
+      // background-color: antiquewhite;
+
+      h2 {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 122.5%;
+        letter-spacing: 0;
+      }
+
+      p {
+        max-width: 571px;
+        max-height: 140px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 160%;
+        letter-spacing: 0;
+      }
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 1204px) {
+  main {
+    background-color: rgb(138, 255, 127);
+
+    .finances-section {
+      min-height: 622px;
+      @include contWidth(753px, 100%, 140px 0px 40px 0px, 0 auto);
+      background-color: aquamarine;
+
+      .statistics-container {
+        height: 170px;
+        @include contWidth(753px, 100%, 40px, 0 auto);
+        top: -70px;
+
+        h3 {
+          font-size: 40px;
+          line-height: 60px;
+        }
+      }
+
+      .img-profile-man {
+        max-width: 366px;
+        height: 475px;
+      }
+
+      .text-box {
+        max-width: 367px;
+        min-height: 470px;
+
+        h2 {
+          font-size: 32px;
+        }
+
+        p {
+          width: 100%;
+          max-height: 244px;
+        }
+      }
+    }
+  }
+}
+
+// mobile
+@media (max-width: 834px) {
+  main {
+    .finances-section {
+      min-height: 969px;
+      @include contWidth(100%, 100%, 406px 17px 40px 17px, 0 auto);
+      min-width: 390px;
+      flex-direction: column;
+
+      background-color: aquamarine;
+
+      .statistics-container {
+        height: 434px;
+        @include contWidth(90%, 100%, 32px 0, 0 auto);
+        min-width: 358px;
+        flex-direction: column;
+        top: -51px;
+
+        h3 {
+          font-size: 48px;
+          line-height: 72px;
+        }
+      }
+
+      .img-profile-man {
+        min-width: 296px;
+        height: 385px;
+      }
+
+      .text-box {
+        max-width: 100%;
+        min-width: 356px;
+        min-height: fit-content;
+        max-height: 558px;
+        row-gap: 24px;
+
+        h2 {
+          font-size: 36px;
+        }
+
+        p {
+          max-width: 100%;
+
+          width: 100%;
+          max-height: 224px;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .service-section {
+    @include contWidth(100%, 100%, 0, 0 auto);
+    background: radial-gradient(circle, #1c92ff, #fff);
+
+    .service-container {
+      @include contWidth(1440px, 100%, 81px 80px 265px 80px, 0 auto);
+      background-color: #bc8afc;
+
+      h2 {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 160%;
+        letter-spacing: 0;
+      }
+
+      .card-list {
+        @include contWidth(1127px, 100%, 40px 0 0 0, 0);
+
+        @include dFlex(space-between, start);
+        max-height: 594px;
+        flex-wrap: wrap;
+        // column-gap: 170px;
+        row-gap: 40px;
+        background-color: azure;
+
+        .card {
+          max-width: 477px;
+          width: 100%;
+          min-height: 257px;
+          @include dFlex(space-between, start);
+          flex-direction: column;
+
+          background-color: aquamarine;
+
+          img {
+            width: 80px;
+          }
+
+          h3 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 160%;
+            letter-spacing: 0;
+          }
+
+          p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 160%;
+            letter-spacing: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 1204px) {
+  main {
+    .service-section {
+      .service-container {
+        @include contWidth(834px, 100%, 54px 39px 142px 40px, 0 auto);
+
+        h2 {
+          font-size: 32px;
+        }
+
+        .card-list {
+          @include contWidth(100%, 100%, 40px 0 0 0, 0);
+          max-height: fit-content;
+
+          .card {
+            max-width: 365px;
+            width: 100%;
+            min-height: fit-content;
+            row-gap: 12px;
+
+            background-color: rgb(127, 255, 244);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* mobile */
+@media (max-width: 834px) {
+  main {
+    .service-section {
+      .service-container {
+        @include contWidth(100%, 100%, 32px 18px, 0 auto);
+        min-width: 390px;
+
+        h2 {
+          font-size: 36px;
+        }
+
+        .card-list {
+          @include contWidth(100%, 100%, 24px 0 0 0, 0);
+          row-gap: 24px;
+
+          .card {
+            max-width: 100%;
+            width: 100%;
+            min-height: fit-content;
+            row-gap: 12px;
+            background-color: rgb(255, 236, 127);
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  margin-bottom: 400px;
+
+  .blue-section {
+    max-width: 100%;
+    background-color: #190422;
+
+    .blue-container {
+      min-height: 428px;
+      @include contWidth(1440px, 100%, 107px 79px 0 89px, 0 auto);
+      @include dFlex(space-between, start);
+      position: relative;
+
+      .text-app {
+        padding-right: 400px;
+        h2 {
+          // max-width: max-content;
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 130%;
+          letter-spacing: 0;
+          color: #fff;
+          margin-bottom: 42px;
+        }
+
+        .app-box {
+          @include contWidth(448px, 100%, 0, 0);
+          @include dFlex(space-between, center);
+
+          img {
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+
+      .img-statistics {
+        max-width: 414px;
+        max-height: 612px;
+        position: absolute;
+        bottom: 0;
+        right: 79px;
+      }
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 1204px) {
+  main {
+    .blue-section {
+      .blue-container {
+        min-height: 275px;
+        @include contWidth(834px, 100%, 56px 39px 0 41px, 0 auto);
+
+        .text-app {
+          padding-right: 300px;
+
+          h2 {
+            font-size: 32px;
+            margin-bottom: 14px;
+          }
+
+          .app-box {
+            @include contWidth(433px, 100%, 0, 0);
+          }
+        }
+
+        .img-statistics {
+          max-width: 273px;
+          max-height: 402px;
+          bottom: 0;
+          right: 39px;
+        }
+      }
+    }
+  }
+}
+
+/* mobile */
+@media (max-width: 834px) {
+  main {
+    .blue-section {
+      min-width: 390px;
+
+      .blue-container {
+        min-height: fit-content;
+        @include contWidth(100%, 100%, 26px 16px 0 15px, 0 auto);
+        flex-wrap: wrap;
+        min-width: 390px;
+
+        .text-app {
+          padding-right: 0;
+          margin: auto;
+
+          h2 {
+            font-size: 36px;
+            margin-bottom: 24px;
+          }
+
+          .app-box {
+            @include contWidth(350px, 100%, 0, 0 auto 29px auto);
+            flex-direction: row-reverse;
+            gap: 8px;
+
+            img {
+              max-width: 171px;
+              max-height: 54px;
+            }
+          }
+        }
+
+        .img-statistics {
+          max-width: 268px;
+          max-height: 396px;
+          bottom: 0;
+          right: 39px;
+          position: static;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .benefits-section {
+    @include contWidth(1440px, 100%, 24px 186px 22px 72px, 0 auto);
+    @include dFlex(space-between, start);
+    min-width: 390px;
+
+    img {
+      max-width: 568px;
+      max-height: 609px;
+    }
+
+    .text-box {
+      max-width: 522px;
+      max-height: fit-content;
+      @include dFlex(space-between, start);
+      flex-direction: column;
+      row-gap: 16px;
+      background-color: #fff;
+      margin-top: 61px;
+
+      h2 {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 0;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 160%;
+        letter-spacing: 0;
+      }
+
+      ul {
+        max-height: fit-content;
+        @include dFlex(space-between, start);
+        flex-direction: column;
+        row-gap: 16px;
+
+        li {
+          @include dFlex(start, center);
+
+          img {
+            margin-right: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 1204px) {
+  main {
+    .benefits-section {
+      @include contWidth(834px, 100%, 38px 41px 40px 42px, 0 auto);
+
+      img {
+        max-width: 366px;
+        max-height: 394px;
+      }
+
+      .text-box {
+        max-width: 100%;
+        margin-top: 2px;
+        // row-gap: 16px;
+
+        h2 {
+          font-size: 32px;
+        }
+
+        ul {
+          // row-gap: 16px;
+
+          li {
+            img {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* mobile */
+@media (max-width: 834px) {
+  main {
+    .benefits-section {
+      @include contWidth(100%, 100%, 40px 19px 23px 16px, 0 auto);
+
+      img {
+        display: none;
+      }
+
+      .text-box {
+        margin-top: 0;
+
+        h2 {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,12 @@
+@mixin dFlex($justCont, $alItms) {
+  display: flex;
+  justify-content: $justCont;
+  align-items: $alItms;
+}
 
+@mixin contWidth($maxWidth, $width100, $paddingAuto, $marginAuto) {
+  max-width: $maxWidth;
+  width: $width100;
+  padding: $paddingAuto;
+  margin: $marginAuto;
+}
