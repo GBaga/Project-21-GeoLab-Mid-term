@@ -325,6 +325,7 @@ main {
           img {
             &:hover {
               transform: scale(1.1);
+              transition: 0.3s ease;
             }
           }
         }
@@ -550,10 +551,22 @@ main {
 
       .icon-left-arrow {
         margin-right: 46px;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.3s ease;
+          cursor: pointer;
+        }
       }
 
       .icon-right-arrow {
         margin-left: 43px;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.3s ease;
+          cursor: pointer;
+        }
       }
 
       .arrow-box {
