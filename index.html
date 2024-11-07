@@ -13,17 +13,19 @@
 </head>
 
 <body>
-    <header class="header-wraper">
+    <header class="header-wraper" id="header-wraper">
         <div class="wrapper">
             <ul class="logo">
+                <a href="https://geolab.edu.ge/" target="_blank"><img src="./assets/images/img-geolab-logo.png"
+                        alt="img-geolab-logo" class="logo-geolab"></a>
                 <a href="#"> K<span>o</span>ni </a>
             </ul>
             <ul id="menu" class="menu-ul">
-                <li><a class="nav-a" href="#">Home</a></li>
-                <li><a class="nav-a" href="#">About</a></li>
-                <li><a class="nav-a" href="#">Payment</a></li>
-                <li><a class="nav-a" href="#">Services</a></li>
-                <li><a class="nav-a" href="#">Contact Us</a></li>
+                <li><a class="nav-a" href="#header-wraper">Home</a></li>
+                <li><a class="nav-a" href="#header-wraper">About</a></li>
+                <li><a class="nav-a" href="#finances-section">Payment</a></li>
+                <li><a class="nav-a" href="#service-section">Services</a></li>
+                <li><a class="nav-a" href="#footer">Contact Us</a></li>
                 <li><a href="#"><button class="nav-btn">Sign in</button></li></a>
             </ul>
 
@@ -32,7 +34,7 @@
             </div>
         </div>
 
-        <div class="header-section">
+        <!-- <div class="header-section">
             <div class="text-box">
                 <h1 class="heading">
                     Your one stop Budgeting tool
@@ -49,11 +51,33 @@
             </div>
 
             <img class="img-cards" src="./assets/images/img-cards.png" alt="img-cards">
-        </div>
+        </div> -->
     </header>
     <main>
-        <section class="finances-section">
-            <div class="statistics-container">
+
+        <section class="header-section">
+            <div class="section-blue-back">
+                <div class="text-box">
+                    <h1 class="heading">
+                        Your one stop Budgeting tool
+                    </h1>
+                    <p class="heading-description">
+                        A budget is a plan for every dollar you have. It’s not magic,
+                        but it represents more financial freedom and a life with much
+                        less stress A budget is a plan.
+                    </p>
+                    <button class="card-btn">
+                        Get Started
+                        <img src="./assets/images/icon-right-arrow.svg" alt="icon-right-arrow">
+                    </button>
+                </div>
+
+                <img class="img-cards" src="./assets/images/img-cards.png" alt="img-cards">
+            </div>
+        </section>
+
+        <section class="finances-section" id="finances-section">
+            <div class="statistics-container" id="statistics-container">
                 <div>
                     <h3>10K<span>+</span></h3>
                     <p>Active users</p>
@@ -89,7 +113,7 @@
             </div>
         </section>
 
-        <section class="service-section">
+        <section class="service-section" id="service-section">
             <div class="service-container">
                 <h2>Our Service</h2>
                 <div class="card-list">
@@ -273,7 +297,74 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
+        <section class="footer-section">
+            <div class="footer-left-side">
+                <div class="logo">
+                    <a href="#"> K<span>o</span>ni </a>
+                </div>
+                <ul id="footer-menu" class="footer-menu">
+                    <li><a class="nav-a" href="#">FAQ’s</a></li>
+                    <li><a class="nav-a" href="#">Contact us</a></li>
+                    <li><a class="nav-a" href="#">Terms & conditions</a></li>
+                    <li><a class="nav-a" href="#">Privacy Policy</a></li>
+                </ul>
+                <div class="social-networks-list">
+                    <a href="#">
+                        <img src="./assets/images/icon-instagram.svg" alt="icon-instagram">
+
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/icon-facebook.svg" alt="icon-facebook">
+
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/icon-twitter.svg" alt="icon-twitter">
+
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/icon-linkedin.svg" alt="icon-linkedin">
+
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right-side">
+                <form>
+                    <label for="emailAddress">Join our mailing list</label><br />
+                    <div class="input-box">
+                        <input id="emailAddress" type="email" maxlength="32" required placeholder="Enter Your Email"
+                            pattern=".+@.+\..+" title="Please provide only your valid email address" />
+                        <input type="submit" value="Send" />
+                    </div>
+                </form>
+                <div class="social-networks-list">
+                    <a href="#">
+                        <img src="./assets/images/icon-instagram.svg" alt="icon-instagram">
+
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/icon-facebook.svg" alt="icon-facebook">
+
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/icon-twitter.svg" alt="icon-twitter">
+
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/icon-linkedin.svg" alt="icon-linkedin">
+
+                    </a>
+                </div>
+                <div class="app-box">
+                    <a href="#">
+                        <img src="./assets/images/img-google-play.png" alt="img-google-play">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/img-app-store.png" alt="img-app-store">
+                    </a>
+                </div>
+            </div>
+        </section>
     </footer>
     <!-- Js Link -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
