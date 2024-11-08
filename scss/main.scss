@@ -109,12 +109,9 @@ main {
 }
 
 main {
-  background-color: rgb(138, 255, 127);
-
   .finances-section {
     @include contWidth(1280px, 100%, 190px 0 52px 0px, 0 auto);
     @include dFlex(space-between, center);
-    background-color: aquamarine;
 
     position: relative;
 
@@ -161,7 +158,6 @@ main {
       @include dFlex(space-between, start);
       flex-direction: column;
       gap: 16px;
-      // background-color: antiquewhite;
 
       h2 {
         font-size: 48px;
@@ -185,12 +181,9 @@ main {
 /* Responsive */
 @media (max-width: 1204px) {
   main {
-    background-color: rgb(138, 255, 127);
-
     .finances-section {
       min-height: 622px;
       @include contWidth(753px, 100%, 140px 0px 40px 0px, 0 auto);
-      background-color: aquamarine;
 
       .statistics-container {
         height: 170px;
@@ -233,8 +226,6 @@ main {
       @include contWidth(100%, 100%, 406px 17px 40px 17px, 0 auto);
       min-width: 390px;
       flex-direction: column;
-
-      background-color: aquamarine;
 
       .statistics-container {
         height: 434px;
@@ -283,7 +274,6 @@ main {
 
     .service-container {
       @include contWidth(1440px, 100%, 81px 80px 265px 80px, 0 auto);
-      background-color: #bc8afc;
 
       h2 {
         font-size: 48px;
@@ -298,9 +288,7 @@ main {
         @include dFlex(space-between, start);
         max-height: 594px;
         flex-wrap: wrap;
-        // column-gap: 170px;
         row-gap: 40px;
-        background-color: azure;
 
         .card {
           max-width: 477px;
@@ -308,8 +296,6 @@ main {
           min-height: 257px;
           @include dFlex(space-between, start);
           flex-direction: column;
-
-          background-color: aquamarine;
 
           img {
             width: 80px;
@@ -354,8 +340,6 @@ main {
             width: 100%;
             min-height: fit-content;
             row-gap: 12px;
-
-            background-color: rgb(127, 255, 244);
           }
         }
       }
@@ -384,7 +368,6 @@ main {
             width: 100%;
             min-height: fit-content;
             row-gap: 12px;
-            background-color: rgb(255, 236, 127);
           }
         }
       }
@@ -625,8 +608,7 @@ main {
     max-width: 100%;
     padding-top: 41px;
     min-width: 390px;
-
-    background-color: #c764f1a6;
+    background: radial-gradient(circle, #1c92ff, #fff);
 
     h2 {
       font-size: 20px;
@@ -640,7 +622,6 @@ main {
       min-height: fit-content;
       @include contWidth(1440px, 100%, 40px 104px 85px 103px, 0 auto);
       @include dFlex(space-between, center);
-      background-color: rgb(253, 253, 252);
 
       .icon-left-arrow {
         margin-right: 46px;
@@ -670,7 +651,6 @@ main {
         width: 100%;
         column-gap: 21px;
         @include dFlex(space-between, center);
-        background-color: aquamarine;
 
         .card {
           @include contWidth(100%, 100%, 24px 24px 34px 24px, 0 auto);
@@ -678,10 +658,10 @@ main {
           row-gap: 16px;
           flex-direction: column;
           min-height: 367px;
+          background-color: #fff;
 
           border-radius: 28px;
           box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
-          background-color: aqua;
 
           h3,
           p {
@@ -777,6 +757,7 @@ main {
 
       h2 {
         text-align: left;
+        @include contWidth(100%, 100%, 0 17px 0 18px, 0 auto);
       }
 
       .customer-container {

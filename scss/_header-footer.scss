@@ -82,41 +82,6 @@
       display: none;
     }
   }
-
-  // .header-section {
-  //   min-height: 844px;
-  //   @include contWidth(1440px, 100%, 36px 21px 131px 77px, 0 auto);
-  //   @include dFlex(space-between, center);
-
-  //   .text-box {
-  //     max-width: 631px;
-  //     width: 100%;
-  //     min-height: 410px;
-  //     margin: auto 0 auto 2;
-
-  //     h1 {
-  //       font-size: 80px;
-  //       font-weight: 600;
-  //       line-height: 120%;
-  //       letter-spacing: 0;
-  //       color: #fff;
-  //     }
-
-  //     p {
-  //       font-size: 20px;
-  //       font-weight: 400;
-  //       line-height: 160%;
-  //       letter-spacing: 0;
-  //       color: #fff;
-  //       margin: 32px 0;
-  //     }
-  //   }
-
-  //   .img-cards {
-  //     max-width: 590px;
-  //     height: 677px;
-  //   }
-  // }
 }
 
 /* Responsive */
@@ -174,27 +139,6 @@
         display: block;
       }
     }
-
-    // .header-section {
-    //   min-height: 622px;
-    //   @include contWidth(834px, 100%, 68px 11px 100px 40px, 0 auto);
-    //   @include dFlex(space-between, center);
-
-    //   .text-box {
-    //     max-width: 370px;
-    //     height: 405px;
-    //     margin: auto 0;
-
-    //     h1 {
-    //       font-size: 48px;
-    //     }
-    //   }
-
-    //   .img-cards {
-    //     max-width: 396px;
-    //     height: 454px;
-    //   }
-    // }
   }
 }
 
@@ -211,25 +155,6 @@
         right: 16px;
       }
     }
-
-    // .header-section {
-    //   @include contWidth(834px, 100%, 46px 16px 76px 15px, 0 auto);
-    //   flex-direction: column;
-
-    //   .text-box {
-    //     max-width: 100%;
-    //     min-height: fit-content;
-    //     @include dFlex(space-between, start);
-    //     flex-direction: column;
-    //     row-gap: 24px;
-    //   }
-
-    //   .img-cards {
-    //     max-width: 336px;
-    //     height: 381px;
-    //     margin-top: 36px;
-    //   }
-    // }
   }
 }
 
