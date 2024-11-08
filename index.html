@@ -15,18 +15,19 @@
 <body>
     <header class="header-wraper" id="header-wraper">
         <div class="wrapper">
-            <ul class="logo">
+            <div class="logo">
                 <a href="https://geolab.edu.ge/" target="_blank"><img src="./assets/images/img-geolab-logo.png"
                         alt="img-geolab-logo" class="logo-geolab"></a>
                 <a href="#"> K<span>o</span>in </a>
-            </ul>
+            </div>
             <ul id="menu" class="menu-ul">
                 <li><a class="nav-a" href="#header-wraper">Home</a></li>
                 <li><a class="nav-a" href="#header-wraper">About</a></li>
                 <li><a class="nav-a" href="#finances-section">Payment</a></li>
                 <li><a class="nav-a" href="#service-section">Services</a></li>
                 <li><a class="nav-a" href="#footer">Contact Us</a></li>
-                <li><a href="#"><button class="nav-btn">Sign in</button></li></a>
+                <!-- <li><a href="#" class="nav-btn btn">Sign in</a></li> -->
+                <li><a href="#"><button class="nav-btn">Sign in</button></a></li>
             </ul>
 
             <div id="burger-menu" class="burger-icon">
@@ -47,7 +48,7 @@
                         but it represents more financial freedom and a life with much
                         less stress A budget is a plan.
                     </p>
-                    <button class="card-btn">
+                    <button class="card-btn btn">
                         Get Started
                         <img src="./assets/images/icon-right-arrow.svg" alt="icon-right-arrow">
                     </button>
@@ -303,7 +304,7 @@
             </div>
             <div class="footer-right-side">
                 <form>
-                    <label for="emailAddress">Join our mailing list</label><br />
+                    <label for="emailAddress">Join our mailing list</label>
                     <div class="input-box">
                         <input id="emailAddress" type="email" maxlength="32" required placeholder="Enter Your Email"
                             pattern=".+@.+\..+" title="Please provide only your valid email address" />
